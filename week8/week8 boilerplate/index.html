@@ -21,8 +21,7 @@
 			<h1>Amanda Ubben</h1>
 			<h2>Media and Information , Michigan State University</h2>
 		</header>
-		<div id="map-location">
-		<p>map</p>
+		<div id="map-location" data-0="background-image:url(img/bw_map.jpg);opacity:.5;height:200px" data-500="background-image:url(img/colormap.jpg);opacity:1;height:400px;" data-800="opacity:.5;height:200px;">
 		</div>
 		<nav>
 			<ul>
@@ -45,8 +44,11 @@
 			</section>
 			<section id="graphic-portfolio">
 				<h3>Graphic Design Portfolio</h3>
-				<p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. </p>
-
+				<ul class="gallery">
+				<li><img alt="Portfolio" src="img/Dyno Droid web background.jpg"></li>
+				<li><img alt="Portfolio" src="img/Dyno Droid web background2.jpg"></li>
+				<li><img alt="Portfolio" src="img/DynoDroid Check crop.jpg"></li>
+				</ul>
 			</section>
 			<section id="contact">
 				<h3>Contact</h3>
@@ -54,9 +56,14 @@
 
 			</section>
 		</article>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
+        <script type="text/javascript">
+    		var s = skrollr.init();
+    	</script>
     </body>
 </html>
