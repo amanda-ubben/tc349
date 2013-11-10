@@ -23,7 +23,7 @@
 		</header>
 		<div id="map-location" data-0="background-image:url(img/bw_map.jpg);opacity:.5;height:200px" data-500="background-image:url(img/colormap.jpg);opacity:1;height:300px;" data-800="opacity:.5;height:200px;">
 		</div>
-		<nav>
+		<nav data-0="position:absolute;top:850px;" data-800="position:absolute;top:850px;" data-1500="position:absolute;top:1550px;">
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#web-portfolio">Web Portfolio</a></li>
@@ -44,7 +44,7 @@
 			</section>
 			<section id="graphic-portfolio">
 				<h3>Graphic Design Portfolio</h3>
-				<ul class="gallery" data-0="position:absolute;top:800px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+				<ul class="gallery">
 				<li><img alt="Portfolio" src="img/Dyno Droid web background.jpg"></li>
 				<li><img alt="Portfolio" src="img/Dyno Droid web background2.jpg"></li>
 				<li><img alt="Portfolio" src="img/DynoDroid Check crop.jpg"></li>
@@ -64,8 +64,9 @@
         <script src="js/main.js"></script>
         
         <script type="text/javascript">
-    		var s = skrollr.init();
-    		skrollr.menu.init(s, {
+    		if($(window).width()>600){
+    			var s = skrollr.init();
+    			skrollr.menu.init(s, {
     //skrollr will smoothly animate to the new position using `animateTo`.
     animate: true,
 
@@ -86,7 +87,8 @@
     //handleLink: function(link) {
         //return 400;//Hardcoding 400 doesn't make much sense.
     //}
-});
+	})
+};
     	</script>
     </body>
 </html>
