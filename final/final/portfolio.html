@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Amanda Ubben</title>
+        <meta name="description" content="The homepage of Amanda Ubben">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+		<header>
+			<h1>Amanda Ubben</h1>
+			<h2 id="head">Web Designer at The Song Market</h2>
+		</header>
+		<img id="header-img" alt="Amanda Ubben" src="img/header.png">
+		<nav data-0="position:absolute;top:600px;" data-500="position:absolute;top:850px;" data-1500="position:absolute;top:1550px;">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#head">Portfolio</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+		<article>
+			<section id="web-portfolio">
+				<h3>My Web Portfolio</h3>
+				<p>These are examples of some of my projects and previous work.</p>
+				<ul class="gallery">
+					<li><a href="http://www.dynodroid.com"><img alt="Portfolio" src="img/DynoDroid_web_background2.jpg"></a></li>
+					<li><a href="http://www.thesongmarket.com"><img alt="Portfolio" src="img/sm_logo.png"></a></li>
+					<li><a href="Amandas_booklist_userguide.pdf"><img alt="Portfolio" src="img/booklist_icon.png"></a></li>
+				</ul>
+
+			</section>
+			<section id="graphic-portfolio">
+				<h3>Graphic Design Portfolio</h3>
+				<p>Graphic Design is a side hobby that I do for fun. I create backgrounds and icons for various projects when I can't find something that I feel goes well with my theme.</p>
+				<ul class="gallery">
+					<li><img alt="Portfolio" src="img/DynoDroid_web_background.jpg"></li>
+					<li><img alt="Portfolio" src="img/DynoDroid_web_background2.jpg"></li>
+					<li><img alt="Portfolio" src="img/DynoDroid_Check_crop.jpg"></li>
+				</ul>
+
+			</section>
+		</article>
+		<footer>
+			<a href="http://validator.w3.org/check?uri=https%3A%2F%2Fwww.msu.edu%2F~ubbenama%2Ftc349%2Fportfolio.html">Validated</a>
+		</footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"> </script>
+         <script src="js/vendor/skrollr.menu.min.js"> </script>
+        <script src="js/plugins.js"> </script>
+        <script src="js/main.js"> </script>
+        
+        <script type="text/javascript">
+    		if($(window).width()>600){
+    			var s = skrollr.init();
+    			skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //The easing function to use.
+    easing: 'sqrt',
+
+    //How long the animation should take in ms.
+    duration: function(currentTop, targetTop) {
+        //By default, the duration is hardcoded at 500ms.
+        return 500;
+
+        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+        //return Math.abs(currentTop - targetTop) * 10;
+    },
+
+    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+    //handleLink: function(link) {
+        //return 400;//Hardcoding 400 doesn't make much sense.
+    //}
+	})
+};
+    	</script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+
+body{
+	background-image:url('../img/bg.jpg');
+	background-repeat:repeat;
+}
+
+header{
+	background-color: #a3987d;
+	height: 500px;
+	padding:40px;
+	border-bottom:#71ad89 20px solid;
+}
+#header-img{
+	position:absolute;
+	top:50px;
+	left:500px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	height:540px;
+	width:374px;
+}
+h1{
+	padding-top:390px;
+	color:#fff;
+
+}
+#head{
+	font-weight:normal;
+	color:#fff;
+}
+h1,h2,p, ul{
+	margin:0px;
+}
+ul{
+	list-style-type:none;
+	padding:0px;
+}
+img{
+	height:100px;
+	width:200px;
+}
+#intro{
+	height:5000px;
+}
+#intro img{
+	height:500px;
+	width:1600px;
+	margin-left: -70px;
+	position:center;
+}
+
+h2{
+	color:#fff;
+}
+footer{
+	position:absolute;
+	top:4800px;
+	color:#fff;
+}
+
+#MPNav li {
+	display:inline;
+	border-right: #fafae1 4px solid;
+	color:#fff;
+	font-size:25px;
+	padding:5px;
+}
+#MPNav{
+	position:absolute;
+	top:4700px;
+	margin-left:600px;
+}
+#MPNav a{
+	color:#fff;
+	text-decoration:none;
+}
+#MPNav a:hover{
+	color:#90d6c3;
+}
+
+#blogNav{
+	margin-left:500px;
+	padding-top:10px;
+}
+#blogNav li{
+	display:inline;
+	border-right: #fafae1 4px solid;
+	color:#fff;
+	font-size:25px;
+	padding:5px;
+}
+#blogNav a{
+	color:#fff;
+	text-decoration:none;
+}
+#blogNav a:hover{
+	color:#90d6c3;
+}
+#resume h2{
+	color:#000;
+}
+#resume h1{
+	padding-top:0px;
+	color:#000;
+}
+nav{
+	float:left;
+	width:250px;
+}
+nav ul{
+	margin: 30px 0 0 40px;
+}
+nav a{
+	color:#fff;
+	text-decoration: none;
+	display:block;
+	padding:10px;
+	border-top:1px solid #fafae1;
+}
+nav a:hover{
+	background:#90d6c3;
+}
+article{
+	width:1000px;
+	margin-left:300px;
+	margin-top:20px;
+	background-color:#fafae1;
+	padding:20px;
+	border: #90d6c3 3px solid;
+}
+.gallery li{
+	display:inline-block;
+	margin:0 2% 2% 0;
+	border: 5px solid #fff;
+	box-shadow:0 0 10px #ccc;
+	transition: border-color .3s;
+}
+.gallery li:hover{
+	border-color:#aeccf9;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+    nav{
+	float:none;
+	width:auto;
+	}
+	article{
+	margin:20px;
+	}
+	#intro img{
+		width:600px;
+		margin-left:0px;
+	}
+	#MPNav{
+		position:absolute;
+		top:3200px;
+		margin-left:100px;
+	}
+	#header-img{
+		position:absolute;
+		top:-20px;
+		left:100px;
+	}
+	h1{
+		padding-top:450px;
+		margin-left:5px;	
+	}
+	footer{
+		position:absolute;
+		top:3300px;
+	}
+}
